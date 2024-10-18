@@ -1,0 +1,7 @@
+id = "svart-galla"
+name = "svart-galla"
+version = "0.0.1"
+schema_version = 1
+authors = ["Ehlix"]
+description = "Red and dark theme"
+repository = "https://github.com/ehlix/svart-galla-theme"

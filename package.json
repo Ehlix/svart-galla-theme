@@ -1,0 +1,40 @@
+{
+  "name": "svart",
+  "icon": "",
+  "displayName": "svart-galla-theme",
+  "description": "svart-galla-theme",
+  "version": "0.0.1",
+  "type": "module",
+  "keywords": [
+    "zed",
+    "theme",
+    "red",
+    "dark",
+    "svart"
+  ],
+  "files": [
+    "src/watcher.mjs"
+  ],
+  "scripts": {
+    "dev": "node --watch src/watcher.mjs"
+  },
+  "author": "Ehlix",
+  "publisher": "Ehlix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ehlix/svart-galla-theme/issues"
+  },
+  "homepage": "https://github.com/ehlix/svart-galla-theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehlix/svart-galla-theme.git"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "devDependencies": {
+    "filewatcher": "^3.0.1",
+    "prettier": "^3.3.3",
+    "sharp": "^0.28.0"
+  }
+}
