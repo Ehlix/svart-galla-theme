@@ -14,10 +14,8 @@ export const base = {
     type: '#393939',
     warn: '#ffcb8b',
     cursor: '#aaa',
-    selection: '#a0222715',
-    border: '#b80b2e10',
-    hover: '#a0222715',
-    activeLine: '#a0222702',
+    hover: '#a02227',
+    border: '#b80b2e',
     number: '#393939',
     vars: '#aaa',
     attr: '#b80b2e',
@@ -55,25 +53,25 @@ export const base = {
   styles: {
     fontStyle: 'italic',
   },
-}
+};
 
 export const baseNoitalics = {
   ...base,
   styles: { ...base.styles, fontStyle: null },
   meta: { ...base.meta, name: 'svart-galla-noitalics' },
-}
+};
 
 export const alt = {
   ...base,
-  colors: { ...base.colors, bg: '#000000', mute: '#353535', hover: '#a0222705' },
+  colors: { ...base.colors, bg: '#000000', mute: '#353535', hover: '#a02227' },
   meta: { ...base.meta, name: 'svart-galla-alt' },
-}
+};
 
 export const altNoiitalics = {
   ...alt,
   styles: { ...alt.styles, fontStyle: null },
   meta: { ...alt.meta, name: 'svart-galla-alt-noitalics' },
-}
+};
 
 export const schema = (themes) => {
   return `{
@@ -81,16 +79,16 @@ export const schema = (themes) => {
     "name": "svart-galla",
     "author": "Ehlix",
     "themes": [${themes.map((base) => buildTheme(base))}]
-  }`
-}
+  }`;
+};
 
 const buildTheme = ({ colors, styles, meta }) => {
   return `{
         "name": "${meta.name}",
         "appearance": "${meta.appearance}",
         "style": {
-          "border": "${colors.border}",
-          "border.variant": "${colors.border}",
+          "border": "${colors.border}10",
+          "border.variant": "${colors.border}10",
           "border.focused": "${colors.bg}",
           "border.selected": "${colors.bg}",
           "border.transparent": "${colors.bg}",
@@ -99,15 +97,15 @@ const buildTheme = ({ colors, styles, meta }) => {
           "surface.background": "${colors.bg}",
           "background": "${colors.bg}",
           "element.background": "${colors.bg}",
-          "element.hover": "${colors.hover}",
-          "element.active": "${colors.hover}",
-          "element.selected": "${colors.hover}",
+          "element.hover": "${colors.hover}10",
+          "element.active": "${colors.hover}10",
+          "element.selected": "${colors.hover}10",
           "element.disabled": null,
-          "drop_target.background": "${colors.hover}",
+          "drop_target.background": "${colors.hover}10",
           "ghost_element.background": null,
-          "ghost_element.hover": "${colors.hover}",
+          "ghost_element.hover": "${colors.hover}05",
           "ghost_element.active": null,
-          "ghost_element.selected": "${colors.hover}",
+          "ghost_element.selected": "${colors.hover}05",
           "ghost_element.disabled": null,
           "text": "${colors.text}",
           "text.muted": "${colors.mute}",
@@ -125,46 +123,46 @@ const buildTheme = ({ colors, styles, meta }) => {
           "tab_bar.background": "${colors.bg}",
           "tab.inactive_background": "${colors.bg}",
           "tab.active_background": "${colors.bg}",
-          "search.match_background": "${colors.hover}",
+          "search.match_background": "${colors.hover}20",
           "panel.background": "${colors.bg}",
-          "panel.selected_background": "${colors.hover}",
+          "panel.selected_background": "${colors.hover}20",
           "panel.focused_border": null,
           "pane.focused_border": null,
-          "scrollbar_thumb.background": "${colors.hover}",
-          "scrollbar.thumb.hover_background": "${colors.hover}",
-          "scrollbar.thumb.border": "${colors.hover}",
+          "scrollbar_thumb.background": "${colors.hover}10",
+          "scrollbar.thumb.hover_background": "${colors.hover}10",
+          "scrollbar.thumb.border": "${colors.hover}10",
           "scrollbar.track.background": "${colors.bg}",
           "scrollbar.track.border": "${colors.bg}",
           "editor.foreground": "${colors.fg}",
           "editor.background": "${colors.bg}",
           "editor.gutter.background": "${colors.bg}",
           "editor.subheader.background": "${colors.bg}",
-          "editor.active_line.background": "${colors.activeLine}",
+          "editor.active_line.background": "${colors.hover}01",
           "editor.highlighted_line.background": null,
           "editor.line_number": "${colors.mute}",
           "editor.active_line_number": "${colors.text}",
           "editor.invisible": null,
           "editor.wrap_guide": "${colors.bg}",
           "editor.active_wrap_guide": "${colors.bg}",
-          "editor.document_highlight.read_background": "${colors.hover}",
-          "editor.document_highlight.write_background": "${colors.hover}",
+          "editor.document_highlight.read_background": "${colors.hover}00",
+          "editor.document_highlight.write_background": "${colors.hover}00",
           "terminal.background": "${colors.bg}",
-          "terminal.foreground": null,
+          "terminal.foreground": "${colors.fg}",
           "terminal.bright_foreground": null,
-          "terminal.dim_foreground": null,
+          "terminal.dim_foreground": "${colors.fg}",
           "terminal.ansi.black": "${colors.black}",
           "terminal.ansi.bright_black": "${colors.brightBlack}",
           "terminal.ansi.dim_black": "${colors.dimBlack}",
           "terminal.ansi.red": "${colors.info}",
-          "terminal.ansi.bright_red": "${colors.info}",
+          "terminal.ansi.bright_red": "${colors.fg}",
           "terminal.ansi.dim_red": "${colors.info}",
           "terminal.ansi.green": "${colors.text}",
-          "terminal.ansi.bright_green": "${colors.text}",
+          "terminal.ansi.bright_green": "${colors.fg}",
           "terminal.ansi.dim_green": "${colors.text}",
           "terminal.ansi.yellow": "${colors.modified}",
-          "terminal.ansi.bright_yellow": "${colors.modified}",
+          "terminal.ansi.bright_yellow": "${colors.fg}",
           "terminal.ansi.dim_yellow": "${colors.modified}",
-          "terminal.ansi.blue": "${colors.text}20",
+          "terminal.ansi.blue": "${colors.text}80",
           "terminal.ansi.bright_blue": "${colors.text}",
           "terminal.ansi.dim_blue": "${colors.text}",
           "terminal.ansi.magenta": "${colors.magenta}",
@@ -223,7 +221,7 @@ const buildTheme = ({ colors, styles, meta }) => {
             {
               "cursor": "${colors.cursor}",
               "background": "${colors.cursor}",
-              "selection": "${colors.selection}"
+              "selection": "${colors.hover}10"
             },
             {
               "cursor": "${colors.yellow}",
@@ -371,12 +369,12 @@ const buildTheme = ({ colors, styles, meta }) => {
           }
         }
       }
-    `
-}
+    `;
+};
 
 export const svg = ({ colors }) => {
-  const clr = Object.values(colors)
-  clr.length = 6
+  const clr = Object.values(colors);
+  clr.length = 6;
   const rect = (color, i) => `
     <rect
       r="0"
@@ -387,7 +385,7 @@ export const svg = ({ colors }) => {
       fill="${color}"
       transform="skewX(-40) scale(4)"
     />
-  `
+  `;
   return `
   <svg
     width="45"
@@ -397,5 +395,5 @@ export const svg = ({ colors }) => {
   >
     ${clr.map(rect).join('')}
   </svg>
-  `
-}
+  `;
+};

@@ -3,7 +3,7 @@
   "icon": "",
   "displayName": "svart-galla-theme",
   "description": "svart-galla-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "keywords": [
     "zed",
@@ -16,7 +16,8 @@
     "src/watcher.mjs"
   ],
   "scripts": {
-    "dev": "node --watch src/watcher.mjs"
+    "dev": "node --watch src/watcher.mjs",
+    "format": "prettier --write src/"
   },
   "author": "Ehlix",
   "publisher": "Ehlix",
@@ -33,7 +34,6 @@
     "Themes"
   ],
   "devDependencies": {
-    "filewatcher": "^3.0.1",
     "prettier": "^3.3.3",
     "sharp": "^0.28.0"
   }

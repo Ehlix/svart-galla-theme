@@ -1,6 +1,6 @@
 id = "svart-galla"
-name = "svart-galla"
-version = "0.0.1"
+name = "svart-galla-theme"
+version = "0.0.2"
 schema_version = 1
 authors = ["Ehlix"]
 description = "Red and dark theme"

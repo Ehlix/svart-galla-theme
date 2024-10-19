@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      filewatcher:
-        specifier: ^3.0.1
-        version: 3.0.1
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -68,9 +65,6 @@ packages:
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
-  debounce@1.2.1:
-    resolution: {integrity: sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==}
-
   decompress-response@4.2.1:
     resolution: {integrity: sha512-jOSne2qbyE+/r8G1VU+G/82LBs2Fs4LAsTiLSHOCOMZQl2OKZ6i8i4IyHemTe+/yIXOtTcRQMzPcgyhoFlqPkw==}
     engines: {node: '>=8'}
@@ -93,9 +87,6 @@ packages:
   expand-template@2.0.3:
     resolution: {integrity: sha512-XYfuKMvj4O35f/pOXLObndIRvyQ+/+6AhODh+OKWj9S9498pHHn/IMszH+gt0fBCRWMNfk1ZSp5x3AifmnI2vg==}
     engines: {node: '>=6'}
-
-  filewatcher@3.0.1:
-    resolution: {integrity: sha512-Fro8py2B8EJupSP37Kyd4kjKZLr+5ksFq7Vbw8A392Z15Unq8016SPUDvO/AsDj5V6bbPk98PTAinpc5YhPbJw==}
 
   fs-constants@1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
@@ -311,8 +302,6 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  debounce@1.2.1: {}
-
   decompress-response@4.2.1:
     dependencies:
       mimic-response: 2.1.0
@@ -328,10 +317,6 @@ snapshots:
       once: 1.4.0
 
   expand-template@2.0.3: {}
-
-  filewatcher@3.0.1:
-    dependencies:
-      debounce: 1.2.1
 
   fs-constants@1.0.0: {}
 
